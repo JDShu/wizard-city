@@ -1,0 +1,27 @@
+While me and Yuda did the bulk of the code and artwork, we did use a lot of work from other people. Here are the resources that we used:
+
+Sounds acquired from the following users on freesound.org:
+
+Vampirella17
+SynaMax
+Inferno
+
+Map tiles acquired from Elona (http://homepage3.nifty.com/rfish/index_e.html)
+
+Everything above is, to the extent of my knowledge, under Creative Commons licenses. If you are aware of any licensing problems please email me at hansshulo@gmail.com.
+
+In addition, some code snippets were taken (placed in tools.py):
+
+Python Chimp Tutorial
+http://www.pygame.org/docs/tut/chimp/ChimpLineByLine.html
+
+Inputbox Module
+http://www.pygame.org/pcr/inputbox/index.php
+
+All other Art belongs to Yuda (http://traghetto.wordpress.com/)
+
+Music belongs to me. (http://jdshu.wordpress.com/)
+
+Thank you for you interest :)
+
+- JDShu
