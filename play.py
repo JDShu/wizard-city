@@ -46,15 +46,12 @@ class Play:
         self.lives_text = None
         self.group_manager.empty_all()
 
-    def new_keybuffer( self ):
-        self.keybuffer = defaultdict(lambda: False)
-        
     def start( self ):
         pygame.mixer.music.stop()
         self.s.play()
         F = open(self.game_state.current_map, "rb")
         self.game_state.load_wizmap(pickle.load(F))
-        self.new_keybuffer()
+        self.keybuffer = defaultdict(lambda: False)
         background_tile = objects.Tile("grass.bmp")
         for x in range(WIDTH):
             for y in range(HEIGHT):
