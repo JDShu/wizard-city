@@ -16,10 +16,10 @@
 
 import os
 import pygame
+import pickle
 
 import objects
 import mapmaker
-from wizmap import *
 
 class Screen_Settings:
     BLOCK_SIZE = 18

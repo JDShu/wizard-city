@@ -17,14 +17,13 @@
 import pygame
 import pickle
 import os
+import random
+from collections import defaultdict
 
 import objects
 from tools import load_image
-from wizmap import *
-from objects import *
-from state import *
-
-from collections import defaultdict
+from objects import Spawn
+from state import Screen_Settings, Group_Manager, Mode
 
 BLOCK_SIZE = Screen_Settings.BLOCK_SIZE
 PANEL = Screen_Settings.PANEL

@@ -16,6 +16,7 @@
 
 import pygame
 import pickle
+import os
 
 import objects
 import mapmaker
@@ -23,9 +24,7 @@ import menu
 import play
 import game_over
 import high_score
-from objects import *
-from wizmap import *
-from state import *
+from state import Screen_Settings, State, Mode
 
 
 BLOCK_SIZE = Screen_Settings.BLOCK_SIZE
