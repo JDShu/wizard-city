@@ -35,7 +35,7 @@ class Play:
         self.game_state = game_state
         self.screen = screen
         self.group_manager = Group_Manager()
-        self.font = pygame.font.Font("data/free_sans.ttf", 18)
+        self.font = pygame.font.Font("data/free_sans.ttf", BLOCK_SIZE)
         self.already_playing = False
         self.lives_text = None
         self.background = pygame.Surface(self.screen.get_size())

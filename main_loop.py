@@ -41,9 +41,8 @@ class Main_Loop:
         pygame.mixer.init()
         pygame.mixer.music.load(os.path.join("data","sounds","mage_garden.ogg"))
         self.size = width, height = BLOCK_SIZE*WIDTH, BLOCK_SIZE*(HEIGHT + PANEL)
-        self.WIDTH, self.HEIGHT = WIDTH, HEIGHT
         self.black = 0,0,0
-        self.screen =  pygame.display.set_mode((width, height))
+        self.screen =  pygame.display.set_mode((width, height), pygame.SCALED)
         pygame.time.set_timer(pygame.USEREVENT+1, 20)
         self.game_state = State("./campaign/test.cpn", self.screen)        
         
