@@ -24,6 +24,8 @@ from wizmap import *
 from objects import *
 from state import *
 
+from collections import defaultdict
+
 BLOCK_SIZE = Screen_Settings.BLOCK_SIZE
 PANEL = Screen_Settings.PANEL
 WIDTH = Screen_Settings.WIDTH
@@ -45,9 +47,7 @@ class Play:
         self.group_manager.empty_all()
 
     def new_keybuffer( self ):
-        self.keybuffer = []
-        for i in range(320):
-            self.keybuffer.append( False )
+        self.keybuffer = defaultdict(lambda: False)
         
     def start( self ):
         pygame.mixer.music.stop()
