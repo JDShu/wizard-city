@@ -56,8 +56,8 @@ class Play:
         self.game_state.load_wizmap(pickle.load(F))
         self.new_keybuffer()
         background_tile = objects.Tile("grass.bmp")
-        for x in xrange(WIDTH):
-            for y in xrange(HEIGHT):
+        for x in range(WIDTH):
+            for y in range(HEIGHT):
                 if  self.game_state.wizmap.map[x][y] == 1:
                     objects.Wall(self.group_manager,x,y)
                 elif self.game_state.wizmap.map[x][y] == 2:

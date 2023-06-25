@@ -27,10 +27,10 @@ def main():
             campaign_name = sys.argv[1]
             F = open("./campaign/" + campaign_name, "r+b")
         else:
-            print "Campaign does not exist"
+            print("Campaign does not exist")
     else:
         new = True
-        campaign_name = raw_input("Campaign Name: ")
+        campaign_name = input("Campaign Name: ")
             
     if new:
         campaign = []
@@ -38,36 +38,36 @@ def main():
         campaign = pickle.load(F)
         
     while True:
-        command = raw_input("Command: ").split()
+        command = input("Command: ").split()
         l = len(command)
-        print command
+        print(command)
         if l == 0:
-            print "no command"
+            print("no command")
             pass
         elif command[0] == "add":
             if l == 1:
-                print "No map specified"
+                print("No map specified")
             elif command[1] in map_list:
                 if l == 2:
                     add_map(command[1],campaign)
                 elif command[2].isdigit():
                     add_map(command[1],campaign,int(command[2]))
                 else:
-                    print "Position not an integer"
-                print campaign
+                    print("Position not an integer")
+                print(campaign)
             else:
-                print "Invalid map"
+                print("Invalid map")
         elif command[0] == "remove":
             if l == 1:
-                print "no map specified"
+                print("no map specified")
             elif command[1] in campaign:
                 remove_map(command[1], campaign)
-                print campaign
+                print(campaign)
             else:
-                print "Invalid map"
+                print("Invalid map")
             
         elif command[0] == "print":
-            print campaign
+            print(campaign)
         elif command[0] == "quit":
             break
         

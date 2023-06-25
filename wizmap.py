@@ -19,7 +19,7 @@ import pickle
 class Wizmap:
     def __init__(self, width = 11, height = 11 ):
         self.map = []
-        for x in xrange(3*height):
+        for x in range(3*height):
             line = 3*width*[0]
             self.map.append( line )
 
@@ -44,13 +44,13 @@ class Wizmap:
         if self.map[x][y] in (1,3):
             self.map[x][y] = 0
         elif self.map[x][y] in (2,4,5,6):
-            for i in xrange(3):
-                for j in xrange(2):
+            for i in range(3):
+                for j in range(2):
                     self.map[x + i][y + j] = 0
             
     def possible_spot( self, x, y, size, item):
-        for i in xrange(size):
-            for j in xrange(size):
+        for i in range(size):
+            for j in range(size):
                 try:
                     if self.map[x + i][y + j] != 0:
                         return False
@@ -59,8 +59,8 @@ class Wizmap:
         return True
 
     def place_large( self, x, y, size):
-        for i in xrange(size):
-            for j in xrange(size):
+        for i in range(size):
+            for j in range(size):
                 self.map[x + i][y + j] = -1
                             
 if __name__ == "__main__":

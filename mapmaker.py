@@ -80,8 +80,8 @@ def main():
             level.place_item( x, y, mode )
             
         screen.fill(black)
-        for x in xrange(WIDTH):
-            for y in xrange(HEIGHT):
+        for x in range(WIDTH):
+            for y in range(HEIGHT):
                 if level.map[x][y] == 1:
                     screen.blit( wall_surface, calc_coord(x, y, WIDTH, HEIGHT, BLOCK_SIZE*WIDTH, BLOCK_SIZE*HEIGHT))
                 elif level.map[x][y] == 2:

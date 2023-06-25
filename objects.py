@@ -54,8 +54,8 @@ class Spritesheet:
         rects = []
         rect = self.sheet.get_rect()
         w_increment, h_increment = rect.w/x, rect.h/y
-        for down in xrange(y):
-            for across in xrange(x):
+        for down in range(y):
+            for across in range(x):
                 rects.append((across * w_increment, down * h_increment, w_increment, h_increment))
         return rects
 
