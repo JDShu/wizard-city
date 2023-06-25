@@ -29,7 +29,7 @@ class Screen_Settings:
 
 
 class Mode:
-    MENU, PLAY, OVER, SCORES, CREDITS, QUIT = list(range(6))
+    MENU, PLAY, OVER, SCORES, CREDITS, QUIT = range(6)
     
 class State:
     def __init__(self, campaign, screen):
